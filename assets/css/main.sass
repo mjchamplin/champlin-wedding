@@ -1,0 +1,121 @@
+@import reset.css
+$marigold: #E7BB32
+$midnight: #242a3f  
+html
+  -webkit-font-smoothing: antialiased
+  //height: 100%
+
+body
+  margin: 0
+  padding: 0
+  width: 100%
+  //min-height: 100vh
+  background: url('/assets/img/flora.jpg')
+  background-size: cover
+  font-family: "filson-soft",sans-serif
+
+
+h1
+  color: #fff
+
+  
+#container
+  width: 100%
+  max-width: 800px
+  background: #fff
+  margin: 6em auto 0
+  
+#top
+  background: $marigold
+  //min-height: 200px
+  padding: 3em 0
+  @media (max-width: 767px)
+    padding: 3em 1em  
+
+  
+  .lockup
+    width: 100%
+    height: auto
+    max-width: 620px
+    margin: 0 auto
+    display: block
+
+#bottom
+  background: #242a3f
+  color: #fff
+  text-transform: uppercase
+  padding: 0 0 3em
+  margin: 0 0 3em
+  @media (max-width: 767px)
+    padding: 0 1em 3em
+  .tagline
+    font-size: 21px
+    text-align: center
+    opacity: .7
+    padding: 2em 0    
+  hr
+    margin: 0 auto
+    padding: 0
+    width: 33%
+  .info
+    text-align: center
+    padding: 2em 0
+    .ser
+      font-family: Georgia, serif
+      font-size: 13px
+      letter-spacing: .2em
+      margin: .7em 0
+    .san
+      font-weight: 100
+      font-size: 21px
+      letter-spacing: .1em
+      opacity: .5
+    .sanSmall
+      font-size: 16px
+      opacity: .5
+    .air
+      height: .5em
+  .rsvp
+    display: block
+    width: 100%
+    max-width: 300px
+    margin: 0 auto
+    padding: .7em
+    border: 1px solid #fff
+    font-size: 12px
+    font-weight: bold
+    letter-spacing: .2em
+    text-align: center
+    text-transform: uppercase
+    text-decoration: none
+    color: #fff
+    opacity: .7
+    transition: all .25s ease-in
+  .rsvp:hover
+    background: $marigold
+    color: $midnight
+    border-color: $marigold
+    opacity: 1
+//  
+  #mountains
+    position: fixed
+    bottom: 0
+    left: 0
+    width: 100%
+    min-width: 800px
+    height: 400px
+    background: url('/assets/img/mountains.png') center bottom no-repeat
+    background-size: contain
+    z-index: 1
+
+  #sun
+    width: 25vw
+    height: 25vw
+    max-width: 175px
+    max-height: 175px
+    background: #E7BB32
+    opacity: .5
+    position: absolute
+    left: 25%
+    bottom: 25%
+    border-radius: 50%

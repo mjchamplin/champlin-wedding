@@ -1,0 +1,26 @@
+@import url(reset.css);
+html { -webkit-font-smoothing: antialiased; }
+
+body { margin: 0; padding: 0; width: 100%; background: url("/assets/img/flora.jpg"); background-size: cover; font-family: "filson-soft", sans-serif; }
+
+h1 { color: #fff; }
+
+#container { width: 100%; max-width: 800px; background: #fff; margin: 6em auto 0; }
+
+#top { background: #E7BB32; padding: 3em 0; }
+@media (max-width: 767px) { #top { padding: 3em 1em; } }
+#top .lockup { width: 100%; height: auto; max-width: 620px; margin: 0 auto; display: block; }
+
+#bottom { background: #242a3f; color: #fff; text-transform: uppercase; padding: 0 0 3em; margin: 0 0 3em; }
+@media (max-width: 767px) { #bottom { padding: 0 1em 3em; } }
+#bottom .tagline { font-size: 21px; text-align: center; opacity: 0.7; padding: 2em 0; }
+#bottom hr { margin: 0 auto; padding: 0; width: 33%; }
+#bottom .info { text-align: center; padding: 2em 0; }
+#bottom .info .ser { font-family: Georgia, serif; font-size: 13px; letter-spacing: 0.2em; margin: 0.7em 0; }
+#bottom .info .san { font-weight: 100; font-size: 21px; letter-spacing: 0.1em; opacity: 0.5; }
+#bottom .info .sanSmall { font-size: 16px; opacity: 0.5; }
+#bottom .info .air { height: 0.5em; }
+#bottom .rsvp { display: block; width: 100%; max-width: 300px; margin: 0 auto; padding: 0.7em; border: 1px solid #fff; font-size: 12px; font-weight: bold; letter-spacing: 0.2em; text-align: center; text-transform: uppercase; text-decoration: none; color: #fff; opacity: 0.7; transition: all 0.25s ease-in; }
+#bottom .rsvp:hover { background: #E7BB32; color: #242a3f; border-color: #E7BB32; opacity: 1; }
+
+/*# sourceMappingURL=main.css.map */
