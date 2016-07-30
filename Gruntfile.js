@@ -30,10 +30,10 @@ module.exports = function(grunt) {
             expand: true,
             // cwd is 'current working directory'
             cwd: 'assets/img/',
-            src: ['**/*.jpg'],
+            src: ['**/*.{png,jpg,gif}'],   // Actual patterns to match
             // Could also match cwd. i.e. project-directory/img/
             dest: 'build/assets/img/',
-            ext: '.jpg'
+            //ext: '.jpg'
           }
         ]
       }
