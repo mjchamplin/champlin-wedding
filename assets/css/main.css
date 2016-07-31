@@ -114,5 +114,15 @@ h1 {
   border-color: #E7BB32;
   opacity: 1;
 }
+#bottom .details {
+  font-family: Georgia, serif;
+  font-size: 13px;
+  letter-spacing: 0.2em;
+  margin: 0.7em 0;
+  text-align: center;
+  padding: 2em 0 0;
+  font-style: italic;
+  opacity: 0.7;
+}
 
 /*# sourceMappingURL=main.css.map */
