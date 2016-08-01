@@ -1,23 +1,21 @@
 @import reset.css
+  
 $marigold: #E7BB32
 $midnight: #242a3f  
+
 html
   -webkit-font-smoothing: antialiased
-  //height: 100%
 
 body
   margin: 0
   padding: 0
   width: 100%
-  //min-height: 100vh
   background: url('../img/flora.jpg')
   background-size: cover
   font-family: "filson-soft",sans-serif
 
-
 h1
   color: #fff
-
   
 #container
   width: 100%
@@ -27,11 +25,9 @@ h1
   
 #top
   background: $marigold
-  //min-height: 200px
   padding: 3em 0
   @media (max-width: 767px)
     padding: 3em 1em  
-
   
   .lockup
     width: 100%
@@ -107,26 +103,3 @@ h1
     padding: 2em 0 0
     font-style: italic
     opacity: .7
-//  
-  #mountains
-    position: fixed
-    bottom: 0
-    left: 0
-    width: 100%
-    min-width: 800px
-    height: 400px
-    background: url('/assets/img/mountains.png') center bottom no-repeat
-    background-size: contain
-    z-index: 1
-
-  #sun
-    width: 25vw
-    height: 25vw
-    max-width: 175px
-    max-height: 175px
-    background: #E7BB32
-    opacity: .5
-    position: absolute
-    left: 25%
-    bottom: 25%
-    border-radius: 50%
