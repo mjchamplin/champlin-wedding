@@ -10,22 +10,73 @@ body
   margin: 0
   padding: 0
   width: 100%
-  background: url('../img/flora.jpg')
-  background-size: cover
+  //background: url('../img/flora.jpg')
+    background-size: cover
   font-family: "filson-soft",sans-serif
 
 h1
-  color: #fff
-  
-#container
+  //color: #fff
+  font-size: 3rem
+  text-transform: uppercase
+  letter-spacing: .2em
+  text-align: center
+.amp
+  font-family: Georgia, serif
+  font-style: italic
+  font-weight: normal
+  //font-size: 2em
+  //vertical-align: middle
+.nav
+  background: $midnight
+  padding: 1em 0
+  //box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05)
+  position: fixed
   width: 100%
-  max-width: 800px
-  background: #fff
-  margin: 6em auto 0
+  color: #fff
+  text-align: center
+  a
+    color: #fff
+    text-decoration: none
+  ul
+    display: block
+    margin: 0 auto
+    display: inline-block
+  li
+    float: left
+    margin-right: 3em
+    padding: 0
+    
+  li:last-child
+    margin-right: 0
+section
+  width: 100%
+  min-height: 100vh
+  padding: 3em 0 0
+  .container
+    width: 100%
+    max-width: 800px
+    margin: 0 auto 0
+    .content
+      margin-top: 2em
+      text-align: left
+      font-family: Georgia, serif
+      font-size: 1em
+      line-height: 1.6em
+      p
+        margin-bottom: 1em
+
+section.one
+  background: url('../img/san-fran.jpg') $marigold
+  background-size: cover
+  background-attachment: fixed
+section.two
+  background: $midnight
   
-#top
-  background: $marigold
-  padding: 3em 0
+#first
+  //background: $marigold
+  padding: 2em 0
+  text-align: center
+  min-height: 100vh
   @media (max-width: 767px)
     padding: 3em 1em  
   
@@ -35,13 +86,45 @@ h1
     max-width: 620px
     margin: 0 auto
     display: block
+  .subtext
+    font-size: 1.3rem
+    font-weight: 200
+    text-transform: uppercase
+    margin-top: .5em
+  .cta
+    font-weight: 500
+    margin-top: 1.5em
+  .thumb
+    width: 100%
+    max-width: 300px
+    height: auto
+    margin: 0 auto 1em
+    border-radius: 50%
+    display: block
+    img
+      border-radius: 50%
+      //box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2)
+#second
+  min-height: 100vh
+  .content
+    background: white
+    padding: 5em
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05)
+    p:first-child:first-letter
+      float: left
+      font-size: 75px
+      line-height: 60px
+      padding-top: 4px
+      padding-right: 8px
+      padding-left: 3px
+
+  
 
 #bottom
-  background: #242a3f
   color: #fff
   text-transform: uppercase
   padding: 0 0 3em
-  margin: 0 0 3em
+  //margin: 0 0 3em
   @media (max-width: 767px)
     padding: 0 1em 3em
   .tagline
