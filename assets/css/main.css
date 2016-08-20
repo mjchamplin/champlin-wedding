@@ -17,6 +17,10 @@ h1 {
   text-align: center;
 }
 
+p {
+  margin-bottom: 1em;
+}
+
 .amp {
   font-family: Georgia, serif;
   font-style: italic;
@@ -66,9 +70,6 @@ section .container .content {
   font-size: 1em;
   line-height: 1.6em;
 }
-section .container .content p {
-  margin-bottom: 1em;
-}
 
 section.one {
   background: url("../img/san-fran.jpg") #E7BB32;
@@ -78,6 +79,16 @@ section.one {
 
 section.two {
   background: #242a3f;
+  color: #fff;
+  padding: 6em;
+}
+
+section.three {
+  background: url("../img/lake.jpg") #E7BB32;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  padding: 6em;
 }
 
 #first {
@@ -119,15 +130,64 @@ section.two {
   border-radius: 50%;
 }
 
-#second {
+#elopement {
   min-height: 100vh;
 }
-#second .content {
+#elopement .content {
   background: white;
   padding: 5em;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
 }
-#second .content p:first-child:first-letter {
+#elopement .content p:first-child:first-letter {
+  float: left;
+  font-size: 75px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+
+section.two h2 {
+  text-align: center;
+  font-size: 2.7em;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+}
+section.two .info {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 4em 0;
+}
+section.two .info .pines {
+  padding: 0 0 2em;
+}
+section.two .info .pines img {
+  max-width: 25px;
+}
+section.two .info .ser {
+  font-family: Georgia, serif;
+  font-size: 13px;
+  letter-spacing: 0.2em;
+  margin: 0.7em 0;
+}
+section.two .info .san {
+  font-weight: 100;
+  font-size: 21px;
+  letter-spacing: 0.1em;
+  opacity: 0.5;
+}
+section.two .info .sanSmall {
+  font-size: 16px;
+  opacity: 0.5;
+}
+section.two .info .air {
+  height: 0.5em;
+}
+section.two .content {
+  font-size: 1.2rem;
+}
+section.two .content p:first-child:first-letter {
   float: left;
   font-size: 75px;
   line-height: 60px;

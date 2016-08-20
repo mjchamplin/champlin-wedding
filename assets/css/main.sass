@@ -17,6 +17,8 @@ h1
   text-transform: uppercase
   letter-spacing: .2em
   text-align: center
+p
+  margin-bottom: 1em
 .amp
   font-family: Georgia, serif
   font-style: italic
@@ -56,8 +58,7 @@ section
       font-family: Georgia, serif
       font-size: 1em
       line-height: 1.6em
-      p
-        margin-bottom: 1em
+
 
 section.one
   background: url('../img/san-fran.jpg') $marigold
@@ -65,6 +66,14 @@ section.one
   background-attachment: fixed
 section.two
   background: $midnight
+  color: #fff
+  padding: 6em
+section.three
+  background: url('../img/lake.jpg') $marigold
+  background-size: cover
+  background-attachment: fixed
+  color: #fff
+  padding: 6em
   
 #first
   padding: 4em 0
@@ -95,12 +104,53 @@ section.two
     display: block
     img
       border-radius: 50%
-#second
+#elopement
   min-height: 100vh
   .content
     background: white
     padding: 5em
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05)
+    p:first-child:first-letter
+      float: left
+      font-size: 75px
+      line-height: 60px
+      padding-top: 4px
+      padding-right: 8px
+      padding-left: 3px
+  
+section.two
+  h2
+    text-align: center
+    font-size: 2.7em
+    font-weight: 400
+    text-transform: uppercase
+    letter-spacing: .25em
+  .info
+    text-align: center
+    text-transform: uppercase
+    padding: 4em 0
+    .pines
+      padding: 0 0 2em
+      img
+        max-width: 25px
+    .ser
+      font-family: Georgia, serif
+      font-size: 13px
+      letter-spacing: .2em
+      margin: .7em 0
+    .san
+      font-weight: 100
+      font-size: 21px
+      letter-spacing: .1em
+      opacity: .5
+    .sanSmall
+      font-size: 16px
+      opacity: .5
+    .air
+      height: .5em
+
+  .content
+    font-size: 1.2rem
     p:first-child:first-letter
       float: left
       font-size: 75px
