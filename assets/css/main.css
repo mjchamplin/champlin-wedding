@@ -17,6 +17,14 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  text-align: center;
+  font-size: 2.7em;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+}
+
 p {
   margin-bottom: 1em;
 }
@@ -70,9 +78,20 @@ section .container .content {
   font-size: 1em;
   line-height: 1.6em;
 }
+section .container .content h2 {
+  font-family: "Filson Soft", sans-serif;
+  margin-bottom: 1em;
+}
+section .container .pines {
+  text-align: center;
+  padding: 0 0 2em;
+}
+section .container .pines img {
+  max-width: 25px;
+}
 
 section.one {
-  background: url("../img/san-fran.jpg") #E7BB32;
+  background: #FAFAFA;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -84,7 +103,7 @@ section.two {
 }
 
 section.three {
-  background: url("../img/lake.jpg") #E7BB32;
+  background: #E7BB32;
   background-size: cover;
   background-attachment: fixed;
   color: #fff;
@@ -158,12 +177,6 @@ section.two .info {
   text-align: center;
   text-transform: uppercase;
   padding: 4em 0;
-}
-section.two .info .pines {
-  padding: 0 0 2em;
-}
-section.two .info .pines img {
-  max-width: 25px;
 }
 section.two .info .ser {
   font-family: Georgia, serif;

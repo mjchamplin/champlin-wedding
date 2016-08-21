@@ -17,6 +17,12 @@ h1
   text-transform: uppercase
   letter-spacing: .2em
   text-align: center
+h2
+  text-align: center
+  font-size: 2.7em
+  font-weight: 400
+  text-transform: uppercase
+  letter-spacing: .25em
 p
   margin-bottom: 1em
 .amp
@@ -58,10 +64,19 @@ section
       font-family: Georgia, serif
       font-size: 1em
       line-height: 1.6em
+      h2
+        font-family: "Filson Soft", sans-serif
+        margin-bottom: 1em
+    .pines
+      text-align: center
+      padding: 0 0 2em
+      img
+        max-width: 25px
 
 
 section.one
-  background: url('../img/san-fran.jpg') $marigold
+  //background: url('../img/san-fran.jpg') $marigold
+  background: #FAFAFA
   background-size: cover
   background-attachment: fixed
 section.two
@@ -69,7 +84,8 @@ section.two
   color: #fff
   padding: 6em
 section.three
-  background: url('../img/lake.jpg') $marigold
+  //background: url('../img/lake.jpg') $marigold
+  background: $marigold
   background-size: cover
   background-attachment: fixed
   color: #fff
@@ -129,10 +145,6 @@ section.two
     text-align: center
     text-transform: uppercase
     padding: 4em 0
-    .pines
-      padding: 0 0 2em
-      img
-        max-width: 25px
     .ser
       font-family: Georgia, serif
       font-size: 13px
