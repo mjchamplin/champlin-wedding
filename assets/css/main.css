@@ -27,10 +27,13 @@ h2 {
 
 p {
   margin-bottom: 1em;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  font-family: "kepler-std", Georgia, serif;
 }
 
 .amp {
-  font-family: Georgia, serif;
+  font-family: "kepler-std", Georgia, serif;
   font-style: italic;
   font-weight: normal;
 }
@@ -63,8 +66,7 @@ p {
 
 section {
   width: 100%;
-  min-height: 100vh;
-  padding: 3em 0 0;
+  padding: 6em 0;
 }
 section .container {
   width: 100%;
@@ -72,9 +74,8 @@ section .container {
   margin: 0 auto 0;
 }
 section .container .content {
-  margin-top: 2em;
   text-align: left;
-  font-family: Georgia, serif;
+  font-family: "kepler-std", Georgia, serif;
   font-size: 1em;
   line-height: 1.6em;
 }
@@ -87,13 +88,25 @@ section .container .pines {
   padding: 0 0 2em;
 }
 section .container .pines img {
-  max-width: 25px;
+  max-height: 35px;
 }
 
 section.one {
-  background: #FAFAFA;
+  background: #fff;
+  background: url("../img/flora.jpg");
   background-size: cover;
-  background-attachment: fixed;
+  padding-bottom: 0;
+  min-height: 100vh;
+}
+section.one .container {
+  background: #fff;
+  max-width: 100%;
+  margin: 4em 0 0;
+}
+
+section.half {
+  background: url("../img/san-fran.jpg") #E7BB32;
+  background-size: cover;
 }
 
 section.two {
@@ -106,14 +119,20 @@ section.three {
   background: #E7BB32;
   background-size: cover;
   background-attachment: fixed;
-  color: #fff;
+  color: #000;
   padding: 6em;
+  min-height: 60vh;
+}
+
+section.four {
+  background: url("../img/flora.jpg");
+  background-size: cover;
+  min-height: 60vh;
 }
 
 #first {
   padding: 4em 0;
   text-align: center;
-  min-height: 100vh;
 }
 @media (max-width: 767px) {
   #first {
@@ -157,13 +176,19 @@ section.three {
   padding: 5em;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
 }
-#elopement .content p:first-child:first-letter {
+#elopement .content p:first-of-type:first-letter {
   float: left;
   font-size: 75px;
   line-height: 60px;
-  padding-top: 4px;
+  padding-top: 8px;
   padding-right: 8px;
   padding-left: 3px;
+}
+
+#registry .content {
+  background: white;
+  padding: 5em;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
 }
 
 section.two h2 {
@@ -173,40 +198,68 @@ section.two h2 {
   text-transform: uppercase;
   letter-spacing: 0.25em;
 }
-section.two .info {
+
+.info {
   text-align: center;
   text-transform: uppercase;
   padding: 4em 0;
 }
-section.two .info .ser {
-  font-family: Georgia, serif;
+.info .ser {
+  font-family: "kepler-std", Georgia, serif;
   font-size: 13px;
   letter-spacing: 0.2em;
   margin: 0.7em 0;
 }
-section.two .info .san {
+.info .san {
   font-weight: 100;
   font-size: 21px;
   letter-spacing: 0.1em;
-  opacity: 0.5;
+  font-family: "Filson Soft", sans-serif;
 }
-section.two .info .sanSmall {
+.info .sanSmall {
   font-size: 16px;
-  opacity: 0.5;
+  font-family: "Filson Soft", sans-serif;
 }
-section.two .info .air {
+.info .air {
   height: 0.5em;
 }
-section.two .content {
+.info a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.address {
+  margin-top: 4em;
+  text-align: center;
+}
+
+.content {
   font-size: 1.2rem;
 }
-section.two .content p:first-child:first-letter {
-  float: left;
-  font-size: 75px;
-  line-height: 60px;
-  padding-top: 4px;
-  padding-right: 8px;
-  padding-left: 3px;
+
+.button {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 0.7em;
+  border: 1px solid #000;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+  opacity: 0.7;
+  transition: all 0.25s ease-in;
+}
+
+.button:hover {
+  background: #242a3f;
+  color: #E7BB32;
+  border-color: #242a3f;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=main.css.map */

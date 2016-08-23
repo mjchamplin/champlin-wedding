@@ -7,9 +7,9 @@ h1 { font-size: 3rem; text-transform: uppercase; letter-spacing: 0.2em; text-ali
 
 h2 { text-align: center; font-size: 2.7em; font-weight: 400; text-transform: uppercase; letter-spacing: 0.25em; }
 
-p { margin-bottom: 1em; }
+p { margin-bottom: 1em; font-size: 1.2em; line-height: 1.5em; font-family: "kepler-std", Georgia, serif; }
 
-.amp { font-family: Georgia, serif; font-style: italic; font-weight: normal; }
+.amp { font-family: "kepler-std", Georgia, serif; font-style: italic; font-weight: normal; }
 
 .nav { background: #242a3f; padding: 1em 0; position: fixed; width: 100%; color: #fff; text-align: center; }
 .nav a { color: #fff; text-decoration: none; }
@@ -17,20 +17,25 @@ p { margin-bottom: 1em; }
 .nav li { float: left; margin-right: 3em; padding: 0; }
 .nav li:last-child { margin-right: 0; }
 
-section { width: 100%; min-height: 100vh; padding: 3em 0 0; }
+section { width: 100%; padding: 6em 0; }
 section .container { width: 100%; max-width: 800px; margin: 0 auto 0; }
-section .container .content { margin-top: 2em; text-align: left; font-family: Georgia, serif; font-size: 1em; line-height: 1.6em; }
+section .container .content { text-align: left; font-family: "kepler-std", Georgia, serif; font-size: 1em; line-height: 1.6em; }
 section .container .content h2 { font-family: "Filson Soft", sans-serif; margin-bottom: 1em; }
 section .container .pines { text-align: center; padding: 0 0 2em; }
-section .container .pines img { max-width: 25px; }
+section .container .pines img { max-height: 35px; }
 
-section.one { background: #FAFAFA; background-size: cover; background-attachment: fixed; }
+section.one { background: #fff; background: url("../img/flora.jpg"); background-size: cover; padding-bottom: 0; min-height: 100vh; }
+section.one .container { background: #fff; max-width: 100%; margin: 4em 0 0; }
+
+section.half { background: url("../img/san-fran.jpg") #E7BB32; background-size: cover; }
 
 section.two { background: #242a3f; color: #fff; padding: 6em; }
 
-section.three { background: #E7BB32; background-size: cover; background-attachment: fixed; color: #fff; padding: 6em; }
+section.three { background: #E7BB32; background-size: cover; background-attachment: fixed; color: #000; padding: 6em; min-height: 60vh; }
 
-#first { padding: 4em 0; text-align: center; min-height: 100vh; }
+section.four { background: url("../img/flora.jpg"); background-size: cover; min-height: 60vh; }
+
+#first { padding: 4em 0; text-align: center; }
 @media (max-width: 767px) { #first { padding: 3em 1em; } }
 #first .lockup { width: 100%; height: auto; max-width: 620px; margin: 0 auto; display: block; }
 #first .subtext { font-size: 1.3rem; font-weight: 200; text-transform: uppercase; margin-top: 0.5em; }
@@ -40,15 +45,25 @@ section.three { background: #E7BB32; background-size: cover; background-attachme
 
 #elopement { min-height: 100vh; }
 #elopement .content { background: white; padding: 5em; box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05); }
-#elopement .content p:first-child:first-letter { float: left; font-size: 75px; line-height: 60px; padding-top: 4px; padding-right: 8px; padding-left: 3px; }
+#elopement .content p:first-of-type:first-letter { float: left; font-size: 75px; line-height: 60px; padding-top: 8px; padding-right: 8px; padding-left: 3px; }
+
+#registry .content { background: white; padding: 5em; box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05); }
 
 section.two h2 { text-align: center; font-size: 2.7em; font-weight: 400; text-transform: uppercase; letter-spacing: 0.25em; }
-section.two .info { text-align: center; text-transform: uppercase; padding: 4em 0; }
-section.two .info .ser { font-family: Georgia, serif; font-size: 13px; letter-spacing: 0.2em; margin: 0.7em 0; }
-section.two .info .san { font-weight: 100; font-size: 21px; letter-spacing: 0.1em; opacity: 0.5; }
-section.two .info .sanSmall { font-size: 16px; opacity: 0.5; }
-section.two .info .air { height: 0.5em; }
-section.two .content { font-size: 1.2rem; }
-section.two .content p:first-child:first-letter { float: left; font-size: 75px; line-height: 60px; padding-top: 4px; padding-right: 8px; padding-left: 3px; }
+
+.info { text-align: center; text-transform: uppercase; padding: 4em 0; }
+.info .ser { font-family: "kepler-std", Georgia, serif; font-size: 13px; letter-spacing: 0.2em; margin: 0.7em 0; }
+.info .san { font-weight: 100; font-size: 21px; letter-spacing: 0.1em; font-family: "Filson Soft", sans-serif; }
+.info .sanSmall { font-size: 16px; font-family: "Filson Soft", sans-serif; }
+.info .air { height: 0.5em; }
+.info a { text-decoration: none; color: inherit; }
+
+.address { margin-top: 4em; text-align: center; }
+
+.content { font-size: 1.2rem; }
+
+.button { display: block; width: 100%; max-width: 300px; margin: 0 auto; padding: 0.7em; border: 1px solid #000; font-size: 12px; font-weight: bold; letter-spacing: 0.2em; text-align: center; text-transform: uppercase; text-decoration: none; color: #000; opacity: 0.7; transition: all 0.25s ease-in; }
+
+.button:hover { background: #242a3f; color: #E7BB32; border-color: #242a3f; opacity: 1; }
 
 /*# sourceMappingURL=main.css.map */

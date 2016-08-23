@@ -1,7 +1,12 @@
 @import reset.css
   
 $marigold: #E7BB32
-$midnight: #242a3f  
+$midnight: #242a3f 
+
+$serif: "kepler-std", Georgia, serif
+$sans-serif: "Filson Soft", sans-serif
+
+
 
 html
   -webkit-font-smoothing: antialiased
@@ -25,8 +30,11 @@ h2
   letter-spacing: .25em
 p
   margin-bottom: 1em
+  font-size: 1.2em
+  line-height: 1.5em
+  font-family: $serif
 .amp
-  font-family: Georgia, serif
+  font-family: $serif
   font-style: italic
   font-weight: normal
 .nav
@@ -52,16 +60,16 @@ p
     margin-right: 0
 section
   width: 100%
-  min-height: 100vh
-  padding: 3em 0 0
+  //min-height: 100vh
+  padding: 6em 0
   .container
     width: 100%
     max-width: 800px
     margin: 0 auto 0
     .content
-      margin-top: 2em
+      //margin-top: 2em
       text-align: left
-      font-family: Georgia, serif
+      font-family: $serif
       font-size: 1em
       line-height: 1.6em
       h2
@@ -71,14 +79,23 @@ section
       text-align: center
       padding: 0 0 2em
       img
-        max-width: 25px
-
-
+        max-height: 35px
+        
 section.one
-  //background: url('../img/san-fran.jpg') $marigold
-  background: #FAFAFA
+  background: #fff
+  background: url('../img/flora.jpg')
   background-size: cover
-  background-attachment: fixed
+  padding-bottom: 0
+  min-height: 100vh
+  .container
+    background: #fff
+    max-width: 100%
+    margin: 4em 0 0
+section.half
+  background: url('../img/san-fran.jpg') $marigold
+  background-size: cover
+  //background-attachment: fixed
+
 section.two
   background: $midnight
   color: #fff
@@ -88,15 +105,21 @@ section.three
   background: $marigold
   background-size: cover
   background-attachment: fixed
-  color: #fff
+  color: #000
   padding: 6em
+  min-height: 60vh
+
+section.four
+  background: url('../img/flora.jpg')
+  background-size: cover
+  min-height: 60vh
   
 #first
   padding: 4em 0
   text-align: center
-  min-height: 100vh
+  //min-height: 100vh
   @media (max-width: 767px)
-    padding: 3em 1em    
+    padding: 3em 1em
   .lockup
     width: 100%
     height: auto
@@ -126,13 +149,18 @@ section.three
     background: white
     padding: 5em
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05)
-    p:first-child:first-letter
+    p:first-of-type:first-letter
       float: left
       font-size: 75px
       line-height: 60px
-      padding-top: 4px
+      padding-top: 8px
       padding-right: 8px
       padding-left: 3px
+#registry
+  .content
+    background: white
+    padding: 5em
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05)
   
 section.two
   h2
@@ -141,32 +169,63 @@ section.two
     font-weight: 400
     text-transform: uppercase
     letter-spacing: .25em
-  .info
-    text-align: center
-    text-transform: uppercase
-    padding: 4em 0
-    .ser
-      font-family: Georgia, serif
-      font-size: 13px
-      letter-spacing: .2em
-      margin: .7em 0
-    .san
-      font-weight: 100
-      font-size: 21px
-      letter-spacing: .1em
-      opacity: .5
-    .sanSmall
-      font-size: 16px
-      opacity: .5
-    .air
-      height: .5em
+.info
+  text-align: center
+  text-transform: uppercase
+  padding: 4em 0
+  .ser
+    font-family: $serif
+    font-size: 13px
+    letter-spacing: .2em
+    margin: .7em 0
+  .san
+    font-weight: 100
+    font-size: 21px
+    letter-spacing: .1em
+    font-family: $sans-serif
+  .sanSmall
+    font-size: 16px
+    font-family: $sans-serif
+  .air
+    height: .5em
+  a
+    text-decoration: none
+    color: inherit
+    
+.address
+  margin-top: 4em
+  text-align: center
 
-  .content
-    font-size: 1.2rem
-    p:first-child:first-letter
-      float: left
-      font-size: 75px
-      line-height: 60px
-      padding-top: 4px
-      padding-right: 8px
-      padding-left: 3px
+.content
+  font-size: 1.2rem
+  //p:first-child:first-letter
+    float: left
+    font-size: 75px
+    line-height: 60px
+    padding-top: 4px
+    padding-right: 8px
+    padding-left: 3px
+  
+  
+//A button
+.button
+  display: block
+  width: 100%
+  max-width: 300px
+  margin: 0 auto
+  padding: .7em
+  border: 1px solid #000
+  font-size: 12px
+  font-weight: bold
+  letter-spacing: .2em
+  text-align: center
+  text-transform: uppercase
+  text-decoration: none
+  color: #000
+  opacity: .7
+  transition: all .25s ease-in
+.button:hover
+  background: $midnight
+  color: $marigold
+  border-color: $midnight
+  opacity: 1
