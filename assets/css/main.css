@@ -221,7 +221,7 @@ section.four {
   margin: 0.7em 0;
 }
 .info .san {
-  font-weight: light;
+  font-weight: 100;
   font-size: 21px;
   letter-spacing: 0.1em;
   font-family: "filson-soft", sans-serif;
