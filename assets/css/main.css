@@ -10,6 +10,10 @@ body {
   font-family: "filson-soft", sans-serif;
 }
 
+body {
+  font-size: 16px;
+}
+
 h1 {
   font-size: 3rem;
   text-transform: uppercase;
@@ -19,10 +23,15 @@ h1 {
 
 h2 {
   text-align: center;
-  font-size: 2.7em;
+  font-size: 2.7rem;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.25em;
+}
+@media (max-width: 767px) {
+  h2 {
+    font-size: 1.5rem;
+  }
 }
 
 p {
@@ -46,6 +55,11 @@ p {
   color: #fff;
   text-align: center;
 }
+@media (max-width: 767px) {
+  .nav {
+    display: none;
+  }
+}
 .nav a {
   color: #fff;
   text-decoration: none;
@@ -66,7 +80,12 @@ p {
 
 section {
   width: 100%;
-  padding: 6em 0;
+  padding: 6em;
+}
+@media (max-width: 767px) {
+  section {
+    padding: 3em;
+  }
 }
 section .container {
   width: 100%;
@@ -95,8 +114,9 @@ section.one {
   background: #fff;
   background: url("../img/flora.jpg");
   background-size: cover;
-  padding-bottom: 0;
-  min-height: 100vh;
+  background-attachment: fixed;
+  padding: 1em 0 0;
+  min-height: 120vh;
 }
 section.one .container {
   background: #fff;
@@ -105,14 +125,13 @@ section.one .container {
 }
 
 section.half {
-  background: url("../img/san-fran.jpg") #E7BB32;
-  background-size: cover;
+  background: #7F0E35;
+  color: #fff;
 }
 
 section.two {
   background: #242a3f;
   color: #fff;
-  padding: 6em;
 }
 
 section.three {
@@ -120,14 +139,19 @@ section.three {
   background-size: cover;
   background-attachment: fixed;
   color: #000;
-  padding: 6em;
   min-height: 60vh;
 }
 
 section.four {
   background: url("../img/flora.jpg");
   background-size: cover;
+  background-attachment: fixed;
   min-height: 60vh;
+}
+@media (max-width: 767px) {
+  section.four {
+    padding: 0;
+  }
 }
 
 #first {
@@ -156,53 +180,39 @@ section.four {
   font-weight: 500;
   margin-top: 1.5em;
 }
+#first img.arrow {
+  max-width: 50px;
+  margin-top: 1em;
+}
 #first .thumb {
-  width: 100%;
+  width: 50%;
   max-width: 300px;
   height: auto;
   margin: 0 auto 1em;
-  border-radius: 50%;
   display: block;
 }
 #first .thumb img {
   border-radius: 50%;
 }
 
-#elopement {
-  min-height: 100vh;
+#registry {
+  padding: 4em 0;
 }
-#elopement .content {
-  background: white;
-  padding: 5em;
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
-}
-#elopement .content p:first-of-type:first-letter {
-  float: left;
-  font-size: 75px;
-  line-height: 60px;
-  padding-top: 8px;
-  padding-right: 8px;
-  padding-left: 3px;
-}
-
 #registry .content {
   background: white;
   padding: 5em;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
 }
 
-section.two h2 {
-  text-align: center;
-  font-size: 2.7em;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.25em;
-}
-
 .info {
   text-align: center;
   text-transform: uppercase;
   padding: 4em 0;
+}
+@media (max-width: 767px) {
+  .info {
+    padding: 0 0 4em;
+  }
 }
 .info .ser {
   font-family: "kepler-std", Georgia, serif;
@@ -242,7 +252,7 @@ section.two h2 {
   width: 100%;
   max-width: 300px;
   margin: 0 auto;
-  padding: 0.7em;
+  padding: 0.8em 0 0.5em 0;
   border: 1px solid #000;
   font-size: 12px;
   font-weight: bold;
@@ -251,15 +261,15 @@ section.two h2 {
   text-transform: uppercase;
   text-decoration: none;
   color: #000;
-  opacity: 0.7;
   transition: all 0.25s ease-in;
+  font-family: "Filson Soft", sans-serif;
+  line-height: 1.6em;
 }
 
 .button:hover {
   background: #242a3f;
   color: #E7BB32;
   border-color: #242a3f;
-  opacity: 1;
 }
 
 /*# sourceMappingURL=main.css.map */

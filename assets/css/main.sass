@@ -2,6 +2,7 @@
   
 $marigold: #E7BB32
 $midnight: #242a3f 
+$red: #7F0E35
 
 $serif: "kepler-std", Georgia, serif
 $sans-serif: "Filson Soft", sans-serif
@@ -17,6 +18,10 @@ body
   width: 100%
   font-family: "filson-soft",sans-serif
 
+body
+  font-size: 16px
+  @media (max-width: 767px)
+    //font-size: 13px
 h1
   font-size: 3rem
   text-transform: uppercase
@@ -24,10 +29,12 @@ h1
   text-align: center
 h2
   text-align: center
-  font-size: 2.7em
+  font-size: 2.7rem
   font-weight: 400
   text-transform: uppercase
   letter-spacing: .25em
+  @media (max-width: 767px)
+    font-size: 1.5rem
 p
   margin-bottom: 1em
   font-size: 1.2em
@@ -44,6 +51,8 @@ p
   width: 100%
   color: #fff
   text-align: center
+  @media (max-width: 767px)
+    display: none
   a
     color: #fff
     text-decoration: none
@@ -60,20 +69,20 @@ p
     margin-right: 0
 section
   width: 100%
-  //min-height: 100vh
-  padding: 6em 0
+  padding: 6em
+  @media (max-width: 767px)
+    padding: 3em
   .container
     width: 100%
     max-width: 800px
     margin: 0 auto 0
     .content
-      //margin-top: 2em
       text-align: left
       font-family: $serif
       font-size: 1em
       line-height: 1.6em
       h2
-        font-family: "Filson Soft", sans-serif
+        font-family: $sans-serif
         margin-bottom: 1em
     .pines
       text-align: center
@@ -85,39 +94,39 @@ section.one
   background: #fff
   background: url('../img/flora.jpg')
   background-size: cover
-  padding-bottom: 0
-  min-height: 100vh
+  background-attachment: fixed
+  padding: 1em 0 0
+  min-height: 120vh
   .container
     background: #fff
     max-width: 100%
     margin: 4em 0 0
 section.half
-  background: url('../img/san-fran.jpg') $marigold
-  background-size: cover
-  //background-attachment: fixed
+  background: $red
+  color: #fff
 
 section.two
   background: $midnight
   color: #fff
-  padding: 6em
+
 section.three
-  //background: url('../img/lake.jpg') $marigold
   background: $marigold
   background-size: cover
   background-attachment: fixed
   color: #000
-  padding: 6em
   min-height: 60vh
 
 section.four
   background: url('../img/flora.jpg')
   background-size: cover
+  background-attachment: fixed
   min-height: 60vh
+  @media (max-width: 767px)
+    padding: 0
   
 #first
   padding: 4em 0
   text-align: center
-  //min-height: 100vh
   @media (max-width: 767px)
     padding: 3em 1em
   .lockup
@@ -134,16 +143,19 @@ section.four
   .cta
     font-weight: 500
     margin-top: 1.5em
+  img.arrow
+    max-width: 50px
+    margin-top: 1em
   .thumb
-    width: 100%
+    width: 50%
     max-width: 300px
     height: auto
     margin: 0 auto 1em
-    border-radius: 50%
+    //border-radius: 50%
     display: block
     img
       border-radius: 50%
-#elopement
+//#elopement
   min-height: 100vh
   .content
     background: white
@@ -157,22 +169,18 @@ section.four
       padding-right: 8px
       padding-left: 3px
 #registry
+  padding: 4em 0
   .content
     background: white
     padding: 5em
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05)
-  
-section.two
-  h2
-    text-align: center
-    font-size: 2.7em
-    font-weight: 400
-    text-transform: uppercase
-    letter-spacing: .25em
+
 .info
   text-align: center
   text-transform: uppercase
   padding: 4em 0
+  @media (max-width: 767px)
+    padding: 0 0 4em
   .ser
     font-family: $serif
     font-size: 13px
@@ -197,14 +205,7 @@ section.two
   text-align: center
 
 .content
-  font-size: 1.2rem
-  //p:first-child:first-letter
-    float: left
-    font-size: 75px
-    line-height: 60px
-    padding-top: 4px
-    padding-right: 8px
-    padding-left: 3px
+  font-size: 1.2rem 
   
   
 //A button
@@ -213,7 +214,7 @@ section.two
   width: 100%
   max-width: 300px
   margin: 0 auto
-  padding: .7em
+  padding: .8em 0 .5em 0
   border: 1px solid #000
   font-size: 12px
   font-weight: bold
@@ -222,10 +223,10 @@ section.two
   text-transform: uppercase
   text-decoration: none
   color: #000
-  opacity: .7
   transition: all .25s ease-in
+  font-family: $sans-serif
+  line-height: 1.6em
 .button:hover
   background: $midnight
   color: $marigold
   border-color: $midnight
-  opacity: 1
