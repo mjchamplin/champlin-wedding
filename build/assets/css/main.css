@@ -25,7 +25,7 @@ section { width: 100%; padding: 6em; }
 @media (max-width: 767px) { section { padding: 3em; } }
 section .container { width: 100%; max-width: 800px; margin: 0 auto 0; }
 section .container .content { text-align: left; font-family: "kepler-std", Georgia, serif; font-size: 1em; line-height: 1.6em; }
-section .container .content h2 { font-family: "Filson Soft", sans-serif; margin-bottom: 1em; }
+section .container .content h2 { font-family: "filson-soft", sans-serif; margin-bottom: 1em; }
 section .container .pines { text-align: center; padding: 0 0 2em; }
 section .container .pines img { max-height: 35px; }
 
@@ -56,8 +56,8 @@ section.four { background: url("../img/flora.jpg"); background-size: cover; back
 .info { text-align: center; text-transform: uppercase; padding: 4em 0; }
 @media (max-width: 767px) { .info { padding: 0 0 4em; } }
 .info .ser { font-family: "kepler-std", Georgia, serif; font-size: 13px; letter-spacing: 0.2em; margin: 0.7em 0; }
-.info .san { font-weight: light; font-size: 21px; letter-spacing: 0.1em; font-family: "Filson Soft", sans-serif; }
-.info .sanSmall { font-size: 16px; font-family: "Filson Soft", sans-serif; }
+.info .san { font-weight: light; font-size: 21px; letter-spacing: 0.1em; font-family: "filson-soft", sans-serif; }
+.info .sanSmall { font-size: 16px; font-family: "filson-soft", sans-serif; }
 .info .air { height: 0.5em; }
 .info a { text-decoration: none; color: inherit; }
 
@@ -65,7 +65,7 @@ section.four { background: url("../img/flora.jpg"); background-size: cover; back
 
 .content { font-size: 1.2rem; }
 
-.button { display: block; width: 100%; max-width: 300px; margin: 0 auto; padding: 0.8em 0 0.5em 0; border: 1px solid #000; font-size: 12px; font-weight: bold; letter-spacing: 0.2em; text-align: center; text-transform: uppercase; text-decoration: none; color: #000; transition: all 0.25s ease-in; font-family: "Filson Soft", sans-serif; line-height: 1.6em; }
+.button { display: block; width: 100%; max-width: 300px; margin: 0 auto; padding: 0.8em 0 0.5em 0; border: 1px solid #000; font-size: 12px; font-weight: bold; letter-spacing: 0.2em; text-align: center; text-transform: uppercase; text-decoration: none; color: #000; transition: all 0.25s ease-in; font-family: "filson-soft", sans-serif; line-height: 1.6em; }
 
 .button:hover { background: #242a3f; color: #E7BB32; border-color: #242a3f; }
 

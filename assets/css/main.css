@@ -99,7 +99,7 @@ section .container .content {
   line-height: 1.6em;
 }
 section .container .content h2 {
-  font-family: "Filson Soft", sans-serif;
+  font-family: "filson-soft", sans-serif;
   margin-bottom: 1em;
 }
 section .container .pines {
@@ -224,11 +224,11 @@ section.four {
   font-weight: light;
   font-size: 21px;
   letter-spacing: 0.1em;
-  font-family: "Filson Soft", sans-serif;
+  font-family: "filson-soft", sans-serif;
 }
 .info .sanSmall {
   font-size: 16px;
-  font-family: "Filson Soft", sans-serif;
+  font-family: "filson-soft", sans-serif;
 }
 .info .air {
   height: 0.5em;
@@ -262,7 +262,7 @@ section.four {
   text-decoration: none;
   color: #000;
   transition: all 0.25s ease-in;
-  font-family: "Filson Soft", sans-serif;
+  font-family: "filson-soft", sans-serif;
   line-height: 1.6em;
 }
 
