@@ -57,7 +57,7 @@ section.four { background: url("../img/flora.jpg"); background-size: cover; back
 @media (max-width: 767px) { .info { padding: 0 0 4em; } }
 .info .ser { font-family: "kepler-std", Georgia, serif; font-size: 13px; letter-spacing: 0.2em; margin: 0.7em 0; }
 .info .san { font-weight: 100; font-size: 21px; letter-spacing: 0.1em; font-family: "filson-soft", sans-serif; }
-.info .sanSmall { font-size: 16px; font-family: "filson-soft", sans-serif; }
+.info .sanSmall { font-size: 16px; font-family: "filson-soft", sans-serif; color: #8F919B; }
 .info .air { height: 0.5em; }
 .info a { text-decoration: none; color: inherit; }
 
