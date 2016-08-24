@@ -7,7 +7,7 @@ body { font-size: 16px; }
 
 h1 { font-size: 3rem; text-transform: uppercase; letter-spacing: 0.2em; text-align: center; }
 
-h2 { text-align: center; font-size: 2.7rem; font-weight: 400; text-transform: uppercase; letter-spacing: 0.25em; }
+h2 { text-align: center; font-size: 2.7rem; font-weight: normal; text-transform: uppercase; letter-spacing: 0.25em; }
 @media (max-width: 767px) { h2 { font-size: 1.5rem; } }
 
 p { margin-bottom: 1em; font-size: 1.2em; line-height: 1.5em; font-family: "kepler-std", Georgia, serif; }
@@ -56,7 +56,7 @@ section.four { background: url("../img/flora.jpg"); background-size: cover; back
 .info { text-align: center; text-transform: uppercase; padding: 4em 0; }
 @media (max-width: 767px) { .info { padding: 0 0 4em; } }
 .info .ser { font-family: "kepler-std", Georgia, serif; font-size: 13px; letter-spacing: 0.2em; margin: 0.7em 0; }
-.info .san { font-weight: 100; font-size: 21px; letter-spacing: 0.1em; font-family: "Filson Soft", sans-serif; }
+.info .san { font-weight: light; font-size: 21px; letter-spacing: 0.1em; font-family: "Filson Soft", sans-serif; }
 .info .sanSmall { font-size: 16px; font-family: "Filson Soft", sans-serif; }
 .info .air { height: 0.5em; }
 .info a { text-decoration: none; color: inherit; }

@@ -24,7 +24,7 @@ h1 {
 h2 {
   text-align: center;
   font-size: 2.7rem;
-  font-weight: 400;
+  font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 0.25em;
 }
@@ -221,7 +221,7 @@ section.four {
   margin: 0.7em 0;
 }
 .info .san {
-  font-weight: 100;
+  font-weight: light;
   font-size: 21px;
   letter-spacing: 0.1em;
   font-family: "Filson Soft", sans-serif;
