@@ -207,12 +207,7 @@ section.four {
 .info {
   text-align: center;
   text-transform: uppercase;
-  padding: 4em 0;
-}
-@media (max-width: 767px) {
-  .info {
-    padding: 0 0 4em;
-  }
+  padding: 0 0 4em;
 }
 .info .ser {
   font-family: "kepler-std", Georgia, serif;
