@@ -64,8 +64,10 @@ section.four { background: url("../img/flora.jpg"); background-size: cover; back
 
 .content { font-size: 1.2rem; }
 
-.button { display: block; width: 100%; max-width: 300px; margin: 0 auto; padding: 0.8em 0 0.5em 0; border: 1px solid #000; font-size: 12px; font-weight: bold; letter-spacing: 0.2em; text-align: center; text-transform: uppercase; text-decoration: none; color: #000; transition: all 0.25s ease-in; font-family: "filson-soft", sans-serif; line-height: 1.6em; }
+.button { display: block; width: 100%; max-width: 300px; margin: 0 auto; padding: 1em 0 0.75em 0; border: 1px solid #000; font-size: 12px; font-weight: bold; letter-spacing: 0.2em; text-align: center; text-transform: uppercase; text-decoration: none; color: #000; transition: all 0.25s ease-in; font-family: "filson-soft", sans-serif; line-height: 1.6em; }
 
 .button:hover { background: #242a3f; color: #E7BB32; border-color: #242a3f; }
+
+.monogram { width: 50%; max-width: 125px; height: auto; margin: 3em auto 0; display: block; }
 
 /*# sourceMappingURL=main.css.map */

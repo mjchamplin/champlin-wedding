@@ -248,7 +248,7 @@ section.four {
   width: 100%;
   max-width: 300px;
   margin: 0 auto;
-  padding: 0.8em 0 0.5em 0;
+  padding: 1em 0 0.75em 0;
   border: 1px solid #000;
   font-size: 12px;
   font-weight: bold;
@@ -266,6 +266,14 @@ section.four {
   background: #242a3f;
   color: #E7BB32;
   border-color: #242a3f;
+}
+
+.monogram {
+  width: 50%;
+  max-width: 125px;
+  height: auto;
+  margin: 3em auto 0;
+  display: block;
 }
 
 /*# sourceMappingURL=main.css.map */
